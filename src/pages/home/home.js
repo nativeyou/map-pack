@@ -1,5 +1,9 @@
-import './home.scss';
-import $ from 'jquery';
-import * as utils from '../../common/js/utils';
-
-utils.common();
+import './home.scss'
+// ------ 业务逻辑
+// ------
+// 热更新设置
+if(module.hot){
+    require('./home.html')
+    module.hot.accept();
+    module.hot.decline('./home.html')
+}

@@ -2,7 +2,7 @@ const config = {
     ip: 'localhost',
     port: '1234',
     name: 'gaoxm-pack',
-    hot: false,
+    hot: true,
     hash: true,
     compress: false,
     cdn: '',

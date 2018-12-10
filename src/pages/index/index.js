@@ -12,3 +12,9 @@ if(window.share){
         // 可使用require('../../assets/img/share.jpg')来加载本地图片
     })
 }
+
+if(module.hot){
+    require('./index.html');
+    module.hot.accept();
+    module.hot.decline('./index.html');
+}
